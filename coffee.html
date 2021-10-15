@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <title>Coffee House</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/al">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="http://fonts.googleapis.com/css?family-Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="con">
+                <img src="1.png" class="logo">
+                <button class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navmenu">
+                    <a href="#">Home</a>
+                    <a href="#">testes</a>
+                    <a href="#">contact us</a>
+                </div>
+
+            </div>
+        </nav>
+    
+        <div class="title">
+            <h2>Choose your teste</h2>
+            <h3>Coffee House</h3>
+            <a href=""><button>Choose</button></a>
+
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.menu').click(function(){
+                    $(this).toggleClass("active");
+                    $(".navmenu").toggleClass("active");
+                })
+            })
+        </script>
+    </body>
